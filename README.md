@@ -2,4 +2,4 @@
 
 ### Here you can find my resume and all my projects. Feel free to take a look! 
 
-http://www.lucianoparente.github.io
+https://www.lucianoparente.github.io
