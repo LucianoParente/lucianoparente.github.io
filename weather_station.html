@@ -16,7 +16,7 @@
 <body>
 	<div class="grid-2">
 		<div class="section-1">
-            <a href="https://lucianoparente.github.io" target="_blank"><i 
+            <a href="https://lucianoparente.github.io"><i 
 				class="fas fa-code fa-5x white"></i></a>
             <h2>Luciano Parente</h2>
             <p>Rio de Janeiro, Brazil</p>
@@ -28,27 +28,30 @@
             <br><br><br><br>
             <p>Contact:</p>
             <p>luciano.p.parente@gmail.com</p>
-        </div>       
+        </div>     
         <div  class="section-2">
 			<h2>Weather Station - Project</h2>
 			<hr>
 			<h3><u>Overview</u></h3>
 			<p>
 				Esse projeto consiste em um sistema capaz de medir, em intervalos de 15 minutos, 
-				as condições ambientes tais como: Tempratura, umidade relativa do ar e verificar 
-				se está chovendo.
-				O sistema é gerenciado e processado por uma placa controladora Esp8266 
-				e todas a informações são coletadas e armazenadas em um banco de dados MySQL.
-			</p>
-			<p>Esse projeto está disponível no meu <a href="#" target="_blank">repositório GitHub.</a> </p>
+				as condições atmosféricas, tais como: Temperatura, umidade relativa do ar, grau de luminosidade e 
+				fazer a verificação de precipitação. O sistema é gerenciado e processado por uma placa controladora Esp8266 
+				e todas a informações são coletadas e armazenadas em um banco de dados MySQL através da conexão Wi-Fi.
+			</p>			
 			<br>
-			
 			<h3><u>Architecture</u></h3>
 			<p>
-				O principal componente é o Node MCU Esp8266, nele estão ligados alguns sensores como DHT22 
-				(sensor de tempreatura e umidade), TL-83 (sensor de chuva), painel solar fotovoltaico (5v 1w), 
+				O principal componente é o NodeMCU modelo Esp8266, nele estão ligados alguns sensores como DHT22 
+				(sensor de temperatura e umidade), TL-83 (sensor de precipitação), painel solar fotovoltaico (5v 1w), 
 				uma bateria 18650 (4.2v 9800mha) TP4056 (placa que alterna a fonte de energia 
 				entre o painel solar e bateria) e LDR (sensor de luz foto-resistivo).
+			</p>
+			<br>
+			<p>
+				O sistema possui alimentação de energia totalmente off-grid, ou seja, na parte noturna é alimentado por uma bateria modelo 
+				18650 (litio, 9800mAh) e durante o dia uma mini placa solar garante a alimentação do sistema e carrega a energia 
+				utilizada durante a noite.
 			</p>
 			<br>
 			<img src="imagens/Weather_Station/Esquema NodeMCU.jpg" alt="Weather Station scheme">
@@ -64,8 +67,9 @@
 				em gráficos de forma amigável para que o usuário possa verificar a situação atual e o histórico anterior.
 			</p>
 			<br>
-			<p>Essa pagina web também está disponível no meu <a href="#" target="_blank">repositório GitHub.</a></p>
 			<img src="imagens/Weather_Station/pagina_ws.png" alt="Web Page Station">
+			<br>
+			<p>Para ter acesso ao código fonte desse projeto, acesse o meu <a href="https://github.com/LucianoParente/weather-station" target="_blank">repositório GitHub.</a> </p>
         </div>
 	</div>
 </body>
